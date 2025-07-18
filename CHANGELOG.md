@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v11.2.0](https://github.com/puppetlabs/puppetlabs-java/tree/v11.2.0) - 2025-07-18
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-java/compare/v11.1.0...v11.2.0)
+
+### Other
+
+- puppet/archive: Allow 8.x [#611](https://github.com/puppetlabs/puppetlabs-java/pull/611) ([evgeni](https://github.com/evgeni))
+- (CAT-2296) Update github runner image to ubuntu-24.04 [#610](https://github.com/puppetlabs/puppetlabs-java/pull/610) ([shubhamshinde360](https://github.com/shubhamshinde360))
+
 ## [v11.1.0](https://github.com/puppetlabs/puppetlabs-java/tree/v11.1.0) - 2024-12-17
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-java/compare/v11.0.1...v11.1.0)
