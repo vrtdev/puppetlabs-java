@@ -15,7 +15,7 @@ describe 'java::download', type: :define do
           version_major: '8u201',
           version_minor: 'b09',
           java_se: 'jdk',
-          url: url
+          url:
         }
       end
       let(:title) { 'jdk8' }
@@ -50,7 +50,7 @@ describe 'java::download', type: :define do
           basedir: '/usr/java',
           manage_symlink: true,
           symlink_name: 'java_home',
-          url: url
+          url:
         }
       end
       let(:title) { 'jdk6' }
@@ -65,7 +65,7 @@ describe 'java::download', type: :define do
           version: '6',
           java_se: 'jdk',
           basedir: '/usr/java',
-          url: url
+          url:
         }
       end
       let(:title) { 'jdk6_nosymlink' }
@@ -78,7 +78,7 @@ describe 'java::download', type: :define do
     let(:facts) { { kernel: 'Linux', os: { family: 'Debian', architecture: 'amd64', name: 'Ubuntu', release: { full: '18.04' } } } }
 
     context 'when passing URL to url parameter' do
-      let(:params) { { ensure: 'present', version_major: '8u201', version_minor: 'b09', java_se: 'jdk', url: url } }
+      let(:params) { { ensure: 'present', version_major: '8u201', version_minor: 'b09', java_se: 'jdk', url: } }
       let(:title) { 'jdk8' }
 
       it { is_expected.to contain_archive('/tmp/jdk-8-8u201-b09-linux-x64.tar.gz') }
@@ -89,7 +89,7 @@ describe 'java::download', type: :define do
     let(:facts) { { kernel: 'Linux', os: { family: 'Debian', architecture: 'amd64', name: 'Debian', release: { full: '10.0' } } } }
 
     context 'when passing URL to url parameter' do
-      let(:params) { { ensure: 'present', version_major: '8u201', version_minor: 'b09', java_se: 'jdk', url: url } }
+      let(:params) { { ensure: 'present', version_major: '8u201', version_minor: 'b09', java_se: 'jdk', url: } }
       let(:title) { 'jdk8' }
 
       it { is_expected.to contain_archive('/tmp/jdk-8-8u201-b09-linux-x64.tar.gz') }
